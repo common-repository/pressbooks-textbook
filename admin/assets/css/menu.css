@@ -1,0 +1,23 @@
+
+/* 
+    Created on : 4-Feb-2014, 3:10:35 PM
+    Author     : bpayne
+*/
+
+div.wrap ul li a.btn-small{
+	width:20%;
+	text-decoration: none;
+}
+
+input.higlight:invalid {
+  background-color: #ffdddd;
+}
+
+input.highlight:valid {
+  background-color: #ddffdd;
+}
+  
+input.hightlight:required {
+  border-color: #800000;
+  border-width: 3px;
+}

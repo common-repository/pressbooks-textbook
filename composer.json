@@ -1,0 +1,38 @@
+{
+  "name": "bccampus/pressbooks-textbook",
+  "description": "Adds functionality to Pressbooks to make it easier to author textbooks",
+  "type": "wordpress-plugin",
+  "version": "4.3.1",
+  "homepage": "https://github.com/bccampus/pressbooks-textbook",
+  "authors": [
+    {
+      "name": "BCcampus",
+      "email": "code@bccampus.ca",
+      "homepage": "https://github.com/BCcampus"
+    }
+  ],
+  "config": {
+    "platform": {
+      "php": "7.1"
+    }
+  },
+  "require": {
+    "php": ">=7.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7",
+    "humanmade/coding-standards": "^0.5.0"
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpunit --configuration phpunit.xml",
+      "@standards"
+    ],
+    "standards": [
+      "vendor/bin/phpcs --standard=phpcs.ruleset.xml ."
+    ],
+    "standards-beautify": [
+      "vendor/bin/phpcbf --standard=phpcs.ruleset.xml ."
+    ]
+  }
+}
